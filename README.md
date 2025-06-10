@@ -3,6 +3,13 @@
 ## 项目简介
 
 PRPD（Phase Resolved Partial Discharge）数据可视化工具是一个基于PySide6和Matplotlib开发的图形界面应用程序，用于可视化和分析局部放电PRPD数据。该工具支持2D和3D视图显示，提供单文件处理和批量处理功能，并允许用户自定义显示参数和保存高质量图像。
+![image](https://github.com/user-attachments/assets/a8c9bafd-9e71-4d33-a169-4029ead9ec34)
+![image](https://github.com/user-attachments/assets/eb65c70f-4b56-41ec-870f-736632f931a9)
+![image](https://github.com/user-attachments/assets/b0632485-1405-4f3d-b0cc-cb43876e7897)
+![image](https://github.com/user-attachments/assets/04fcbd31-2e05-440c-b6ee-a7b7b52d3287)
+![image](https://github.com/user-attachments/assets/1453768c-9198-4f20-839e-29d00c30f2b7)
+![image](https://github.com/user-attachments/assets/5e0511e1-3e5a-4d61-9553-eea3e9184be1)
+
 
 ## 功能特点
 
