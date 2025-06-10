@@ -1,0 +1,36 @@
+---
+description: 
+globs: 
+alwaysApply: false
+---
+# PRPD数据结构和处理
+
+## PRPD数据说明
+PRPD（Phase Resolved Partial Discharge）是相位分辨局部放电的缩写，用于电气设备绝缘状态分析。
+
+## 数据格式
+- 输入数据为CSV格式
+- 数据不包含表头
+- 行表示电压百分比（0-100%）
+- 列表示相位角度（0-360度）
+- 数据值表示对应相位和电压下的放电幅值
+
+## 数据处理流程
+
+1. **数据读取**
+   - 使用pandas读取CSV文件 `pd.read_csv(file_path, header=None)`
+   - 数据存储为DataFrame结构
+
+2. **数据可视化**
+   - **2D视图**：使用`imshow`函数，以相位为X轴，电压为Y轴，颜色表示幅值
+   - **3D视图**：使用`plot_surface`函数，以相位为X轴，电压为Y轴，Z轴表示幅值
+
+3. **颜色方案**
+   - 使用`LinearSegmentedColormap.from_list`创建自定义颜色方案
+   - 提供多种预设颜色组合选项
+
+## 批处理逻辑
+- 多线程处理多个文件
+- 使用信号机制（Signal）更新进度和状态
+- 按照统一设置生成图像并保存
+

@@ -1,0 +1,46 @@
+---
+description: 
+globs: 
+alwaysApply: false
+---
+# PRPD数据可视化工具结构
+
+## 主要文件
+主程序文件是 [prpd_gui.py](mdc:prpd_gui.py)，包含了整个PRPD数据可视化工具的实现。
+
+## 主要类和功能
+
+### 1. PRPDVisualizer
+- 主窗口类，包含所有GUI组件和功能
+- 提供单文件处理和批处理两种模式
+- 支持2D和3D数据可视化
+- 提供多种颜色方案选项
+
+### 2. MatplotlibCanvas
+- 用于在Qt应用中嵌入Matplotlib的画布类
+- 支持2D和3D图形显示
+
+### 3. BatchProcessThread
+- 用于执行批处理操作的线程类
+- 通过信号机制与主界面通信进度和状态
+
+## 主要功能
+
+1. **单文件处理功能**
+   - 打开和读取PRPD CSV数据文件
+   - 2D/3D图形展示
+   - 自定义颜色方案
+   - 图像保存和DPI设置
+
+2. **批处理功能**
+   - 批量处理多个PRPD文件
+   - 统一设置2D/3D视图、颜色方案和DPI
+   - 进度显示和状态更新
+   - 输出目录选择
+
+## 使用技术
+- PySide6 (Qt) 用于GUI界面
+- Matplotlib 用于数据可视化
+- Pandas 用于数据处理
+- NumPy 用于数值计算
+
